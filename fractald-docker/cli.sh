@@ -1,0 +1,1 @@
+docker-compose exec bitcoind bitcoin-cli -datadir=/data "$@"
