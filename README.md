@@ -31,6 +31,7 @@ cp ./bitcoin.conf ./data
 ```
 git clone https://github.com/fractal-bitcoin/fractald-release.git
 
+cd fractald-release
 cd fractald-docker
 
 docker-compose up -d
