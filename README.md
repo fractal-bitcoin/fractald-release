@@ -17,6 +17,7 @@ With strong tooling and support, building on Fractal is straightforward.
 ```
 git clone https://github.com/fractal-bitcoin/fractald-release.git
 
+cd fractald-release
 cd fractald-x86_64-linux-gnu
 
 mkdir data
