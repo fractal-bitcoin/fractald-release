@@ -28,7 +28,7 @@ cp ./bitcoin.conf ./data
 
 ```
 
-### Run with Docker
+### Run with Docker on Linux
 
 This requires `git` and Docker to be installed on the system.\
 For details on how to install docker, visit the official documentation here: https://docs.docker.com/desktop/install/linux-install/
