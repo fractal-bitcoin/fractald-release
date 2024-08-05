@@ -15,11 +15,11 @@ With strong tooling and support, building on Fractal is straightforward.
 ### Run on linux
 
 ```
-wget https://github.com/fractal-bitcoin/fractald-release/releases/download/v0.1.5/fractald-0.1.5-x86_64-linux-gnu.tar.gz
+wget https://github.com/fractal-bitcoin/fractald-release/releases/download/v0.1.6/fractald-0.1.6-x86_64-linux-gnu.tar.gz
 
-tar -zxvf fractald-0.1.5-x86_64-linux-gnu.tar.gz
+tar -zxvf fractald-0.1.6-x86_64-linux-gnu.tar.gz
 
-cd fractald-0.1.5-x86_64-linux-gnu
+cd fractald-0.1.6-x86_64-linux-gnu
 
 mkdir data
 cp ./bitcoin.conf ./data
