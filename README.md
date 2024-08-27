@@ -15,19 +15,21 @@ With strong tooling and support, building on Fractal is straightforward.
 **Run on linux:**
 
 1. Download the release:
+
 ```bash
-wget https://github.com/fractal-bitcoin/fractald-release/releases/download/v0.1.7/fractald-0.1.7-x86_64-linux-gnu.tar.gz
+wget https://github.com/fractal-bitcoin/fractald-release/releases/download/v0.1.8/fractald-0.1.8-x86_64-linux-gnu.tar.gz
 ```
 
 2. Extract the files:
 
 ```bash
-tar -zxvf fractald-0.1.7-x86_64-linux-gnu.tar.gz
+tar -zxvf fractald-0.1.8-x86_64-linux-gnu.tar.gz
 ```
 
 3. Navigate to the directory:
+
 ```bash
-cd fractald-0.1.7-x86_64-linux-gnu
+cd fractald-0.1.8-x86_64-linux-gnu
 ```
 
 4. Set up the data directory:
