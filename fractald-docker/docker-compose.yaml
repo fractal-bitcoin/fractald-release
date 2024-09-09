@@ -1,7 +1,7 @@
 version: "3"
 services:
   bitcoind:
-    image: fractalbitcoin/fractal:v0.2.0
+    image: fractalbitcoin/fractal:v0.2.1
     entrypoint: ["bitcoind", "-datadir=/data/", "-maxtipage=504576000"]
     command: ""
     healthcheck:
