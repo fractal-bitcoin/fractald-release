@@ -9,9 +9,6 @@ services:
     networks:
       - fractal-bitcoin
     ports:
-      - "8330:8330"
-      - "8331:8331"
-      - "8332:8332"
       - "8333:8333"
     deploy:
       resources:
