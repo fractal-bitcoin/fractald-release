@@ -39,7 +39,7 @@ mkdir data
 cp ./bitcoin.conf ./data
 ```
 
-5. Run the Bitcoin daemon:
+5. Run the Fractal Bitcoin daemon:
 
 ```bash
 ./bin/bitcoind -datadir=./data/ -maxtipage=504576000
