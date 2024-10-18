@@ -1,7 +1,7 @@
 version: "3"
 services:
   bitcoind:
-    image: fractalbitcoin/fractal:v0.2.1
+    image: fractalbitcoin/fractal:v0.2.2
     entrypoint: ["bitcoind", "-datadir=/data/"]
     healthcheck:
       test: ["CMD", "bitcoin-cli", "-datadir=/data/", "getblockchaininfo"]
