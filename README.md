@@ -82,13 +82,15 @@ testnet=1
 
 - 2 cores CPU
 - 8 GB memory
-- 800GB disk space.
+- Disk space:
+  - Mainnet: 800 GB
+  - Testnet: 300 GB
 
 ### For mining node
 
 - 2 cores CPU
 - 4 GB memory
-- 50GB disk space.
+- 50 GB disk space.
 
 Edit `bitcoin.conf` to add the following parameters.
 
