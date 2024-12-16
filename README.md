@@ -1,8 +1,8 @@
-### Fractal Bitcoin Overview
+# Fractal Bitcoin Overview
 
 **Website:** [Fractal Bitcoin](https://fractalbitcoin.io)
 
-**What is Fractal Bitcoin?**
+## What is Fractal Bitcoin?
 
 Fractal Bitcoin is the only Bitcoin scaling solution that uses the Bitcoin Core code itself to recursively scale unlimited layers on top of the world’s most-secure and -held blockchain.
 
@@ -10,7 +10,7 @@ It is the first instance of a virtualization methodology applied to Bitcoin in t
 
 With strong tooling and support, building on Fractal is straightforward.
 
-### Running Fractal Bitcoin
+## Running Fractal Bitcoin
 
 **Run on linux:**
 
@@ -36,7 +36,6 @@ cd fractald-0.2.2-x86_64-linux-gnu
 
 ```bash
 mkdir data
-cp ./bitcoin.conf ./data
 ```
 
 5. Run the Bitcoin daemon:
@@ -63,4 +62,36 @@ cd fractald-docker
 
 ```bash
 docker-compose up -d
+```
+
+## Configuration
+
+### Runing Fractal Bitcoin Testnet
+
+Edit `bitcoin.conf` to add the following parameters.
+
+```
+testnet=1
+
+[testnet]
+```
+
+## Recommended configuration
+
+### For full node
+
+- 2 cores CPU
+- 8 GB memory
+- 800GB disk space.
+
+### For mining node
+
+- 2 cores CPU
+- 4 GB memory
+- 50GB disk space.
+
+Edit `bitcoin.conf` to add the following parameters.
+
+```
+prune=50000
 ```
