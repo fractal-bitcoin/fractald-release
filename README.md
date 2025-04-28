@@ -10,6 +10,19 @@ It is the first instance of a virtualization methodology applied to Bitcoin in t
 
 With strong tooling and support, building on Fractal is straightforward.
 
+## Build Fractal Bitcoin
+
+The following are developer notes on how to build Bitcoin Core on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
+
+- [Dependencies](https://github.com/fractal-bitcoin/fractal/blob/main/doc/dependencies.md)
+- [macOS Build Notes](https://github.com/fractal-bitcoin/fractal/blob/main/doc/build-osx.md)
+- [Unix Build Notes](https://github.com/fractal-bitcoin/fractal/blob/main/doc/build-unix.md)
+- [Windows Build Notes](https://github.com/fractal-bitcoin/fractal/blob/main/doc/build-windows.md)
+- [FreeBSD Build Notes](https://github.com/fractal-bitcoin/fractal/blob/main/doc/build-freebsd.md)
+- [OpenBSD Build Notes](https://github.com/fractal-bitcoin/fractal/blob/main/doc/build-openbsd.md)
+- [NetBSD Build Notes](https://github.com/fractal-bitcoin/fractal/blob/main/doc/build-netbsd.md)
+- [Android Build Notes](https://github.com/fractal-bitcoin/fractal/blob/main/doc/build-android.md)
+
 ## Running Fractal Bitcoin
 
 **Run on linux:**
