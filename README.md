@@ -51,7 +51,7 @@ cd fractald-0.2.2-x86_64-linux-gnu
 mkdir data
 ```
 
-5. Run the Bitcoin daemon:
+5. Run the Fractal Bitcoin daemon:
 
 ```bash
 ./bin/bitcoind -datadir=./data/
