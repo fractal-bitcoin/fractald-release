@@ -10,6 +10,56 @@ It is the first instance of a virtualization methodology applied to Bitcoin in t
 
 With strong tooling and support, building on Fractal is straightforward.
 
+## Getting Started
+
+### System Requirements
+
+| Node Type   | CPU     | RAM  | Storage (Mainnet) | Storage (Testnet) |
+| ----------- | ------- | ---- | ----------------- | ----------------- |
+| Full Node   | 2 cores | 8 GB | 2 TB              | 300 GB            |
+| Mining Node | 2 cores | 4 GB | 300 GB            | 100 GB            |
+
+### Installation Options
+
+**1. Linux Binary Installation**
+
+```
+# Download and extract release
+wget https://github.com/fractal-bitcoin/fractald-release/releases/download/v0.2.2/fractald-0.2.2-x86_64-linux-gnu.tar.gz
+tar -zxvf fractald-0.2.2-x86_64-linux-gnu.tar.gz
+
+# Run the daemon
+cd fractald-0.2.2-x86_64-linux-gnu
+mkdir data
+./bin/bitcoind -datadir=./data/
+```
+
+**2. Docker Installation**
+
+```
+git clone https://github.com/fractal-bitcoin/fractald-release.git
+cd fractald-release/fractald-docker
+docker-compose up -d
+```
+
+## Configuration
+
+**Testnet Setup**
+
+Add to bitcoin.conf:
+
+```
+testnet=1
+[testnet]
+```
+
+**Pruning (Space Saving)**
+
+```
+prune=50000  # Keeps 50GB of blocks
+# Note: Pruning activates after block 100,000
+```
+
 ## Build Fractal Bitcoin
 
 The following are developer notes on how to build Bitcoin Core on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
@@ -22,91 +72,3 @@ The following are developer notes on how to build Bitcoin Core on your native pl
 - [OpenBSD Build Notes](https://github.com/fractal-bitcoin/fractal/blob/main/doc/build-openbsd.md)
 - [NetBSD Build Notes](https://github.com/fractal-bitcoin/fractal/blob/main/doc/build-netbsd.md)
 - [Android Build Notes](https://github.com/fractal-bitcoin/fractal/blob/main/doc/build-android.md)
-
-## Running Fractal Bitcoin
-
-**Run on linux:**
-
-1. Download the release:
-
-```bash
-wget https://github.com/fractal-bitcoin/fractald-release/releases/download/v0.2.2/fractald-0.2.2-x86_64-linux-gnu.tar.gz
-```
-
-2. Extract the files:
-
-```bash
-tar -zxvf fractald-0.2.2-x86_64-linux-gnu.tar.gz
-```
-
-3. Navigate to the directory:
-
-```bash
-cd fractald-0.2.2-x86_64-linux-gnu
-```
-
-4. Set up the data directory:
-
-```bash
-mkdir data
-```
-
-5. Run the Bitcoin daemon:
-
-```bash
-./bin/bitcoind -datadir=./data/
-```
-
-**Using Docker:**
-
-1. Clone the repository:
-
-```bash
-git clone https://github.com/fractal-bitcoin/fractald-release.git
-```
-
-2. Navigate to the Docker directory:
-
-```bash
-cd fractald-docker
-```
-
-3. Start the service with Docker Compose:
-
-```bash
-docker-compose up -d
-```
-
-## Configuration
-
-### Runing Fractal Bitcoin Testnet
-
-Edit `bitcoin.conf` to add the following parameters.
-
-```
-testnet=1
-
-[testnet]
-```
-
-## Recommended configuration
-
-### For full node
-
-- 2 cores CPU
-- 8 GB memory
-- Disk space:
-  - Mainnet: 800 GB
-  - Testnet: 300 GB
-
-### For mining node
-
-- 2 cores CPU
-- 4 GB memory
-- 50 GB disk space.
-
-Edit `bitcoin.conf` to add the following parameters.
-
-```
-prune=50000
-```
