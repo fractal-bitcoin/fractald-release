@@ -25,11 +25,11 @@ With strong tooling and support, building on Fractal is straightforward.
 
 ```
 # Download and extract release
-wget https://github.com/fractal-bitcoin/fractald-release/releases/download/v0.2.2/fractald-0.2.2-x86_64-linux-gnu.tar.gz
-tar -zxvf fractald-0.2.2-x86_64-linux-gnu.tar.gz
+wget https://github.com/fractal-bitcoin/fractald-release/releases/download/v0.2.3/fractald-0.2.3-x86_64-linux-gnu.tar.gz
+tar -zxvf fractald-0.2.3-x86_64-linux-gnu.tar.gz
 
 # Run the daemon
-cd fractald-0.2.2-x86_64-linux-gnu
+cd fractald-0.2.3-x86_64-linux-gnu
 mkdir data
 ./bin/bitcoind -datadir=./data/
 ```
@@ -56,8 +56,8 @@ testnet=1
 **Pruning (Space Saving)**
 
 ```
-prune=50000  # Keeps 50GB of blocks
-# Note: Pruning activates after block 100,000
+prune=10000  # Keeps ~10GB of blocks
+# Pruning activates after block 10,000 since v0.2.3 (was 100,000 before).
 ```
 
 ## Build Fractal Bitcoin
