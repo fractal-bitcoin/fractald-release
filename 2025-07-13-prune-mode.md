@@ -28,7 +28,7 @@ A legacy `txindex` folder (~153GB) will remain under `data/indexes/txindex`.
 
 This step helps reclaim significant disk space if you’re converting a full node to a pruned one.
 
-## release v0.2.3 of prune mode enhancement
+## Fractal node v0.2.3 of prune mode enhancement
 
 - 💾 Lowered minimum pruning height:
  Reduced from 100,000 to 10,000 — allowing nodes to prune more data and save additional disk space
