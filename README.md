@@ -17,7 +17,9 @@ With strong tooling and support, building on Fractal is straightforward.
 | Node Type   | CPU     | RAM  | Storage (Mainnet) | Storage (Testnet) |
 | ----------- | ------- | ---- | ----------------- | ----------------- |
 | Full Node   | 2 cores | 8 GB | 2 TB              | 300 GB            |
-| Mining Node | 2 cores | 4 GB | 300 GB            | 100 GB            |
+| Mining Node | 2 cores | 4 GB | 300 GB (prune mode)           | 100 GB            |
+
+* For more details of Prune Mode, please check: [2025.07 Fractal Prune Mode Explained](./2025-07-13-prune-mode.md) 
 
 ### Installation Options
 
