@@ -14,12 +14,12 @@ With strong tooling and support, building on Fractal is straightforward.
 
 ### System Requirements
 
-| Node Type   | CPU     | RAM  | Storage (Mainnet) | Storage (Testnet) |
-| ----------- | ------- | ---- | ----------------- | ----------------- |
-| Full Node   | 2 cores | 8 GB | 2 TB              | 300 GB            |
-| Mining Node | 2 cores | 4 GB | 300 GB (prune mode)           | 100 GB            |
+| Node Type   | CPU     | RAM  | Storage (Mainnet)   | Storage (Testnet) |
+| ----------- | ------- | ---- | ------------------- | ----------------- |
+| Full Node   | 2 cores | 8 GB | 2 TB                | 300 GB            |
+| Mining Node | 2 cores | 4 GB | 300 GB (prune mode) | 100 GB            |
 
-* For more details of Prune Mode, please check: [2025.07 Fractal Prune Mode Explained](./2025-07-13-prune-mode.md) 
+- For more details of Prune Mode, please check: [2025.07 Fractal Prune Mode Explained](./2025-07-13-prune-mode.md)
 
 ### Installation Options
 
@@ -27,11 +27,11 @@ With strong tooling and support, building on Fractal is straightforward.
 
 ```
 # Download and extract release
-wget https://github.com/fractal-bitcoin/fractald-release/releases/download/v0.2.3rc1/fractald-0.2.3-x86_64-linux-gnu.tar.gz
-tar -zxvf fractald-0.2.3-x86_64-linux-gnu.tar.gz
+wget https://github.com/fractal-bitcoin/fractald-release/releases/download/v0.2.9/fractald-0.2.9-x86_64-linux-gnu.tar.gz
+tar -zxvf fractald-0.2.9-x86_64-linux-gnu.tar.gz
 
 # Run the daemon
-cd fractald-0.2.3-x86_64-linux-gnu
+cd fractald-0.2.9-x86_64-linux-gnu
 mkdir data
 ./bin/bitcoind -datadir=./data/
 ```
