@@ -27,11 +27,11 @@ With strong tooling and support, building on Fractal is straightforward.
 
 ```
 # Download and extract release
-wget https://github.com/fractal-bitcoin/fractald-release/releases/download/v0.3.0rc2/fractald-0.3.0rc2-x86_64-linux-gnu.tar.gz
-tar -zxvf fractald-0.3.0rc2-x86_64-linux-gnu.tar.gz
+wget https://github.com/fractal-bitcoin/fractald-release/releases/download/v0.3.0/fractald-0.3.0-x86_64-linux-gnu.tar.gz
+tar -zxvf fractald-0.3.0-x86_64-linux-gnu.tar.gz
 
 # Run the daemon
-cd fractald-0.3.0rc2-x86_64-linux-gnu
+cd fractald-0.3.0-x86_64-linux-gnu
 mkdir data
 ./bin/bitcoind -datadir=./data/
 ```
